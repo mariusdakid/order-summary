@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    background-color: rgb(224, 232, 255);
+}
+
+.container{
+    width:350px;
+}
+
+.hero{
+    width: 100%;  
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bottom-section{
+    background-color: rgb(245, 247, 255);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 5px 2px rgba(95, 63, 54, 0.2);
+    padding: 2rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+h3{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    color:rgb(31, 47, 86)
+}
+
+.first{
+    margin-bottom: 1rem;
+    font-size: 13px;
+    font-weight: 500;
+    color:rgb(114, 128, 167);
+}
+
+.bill{
+    display: flex;
+}
+
+.price-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-right: 6rem;
+    font-size: 13px;
+}
+
+.chg{
+    color:rgb(31, 47, 86);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    transform: translateY(1.5rem);
+}
+
+.chg:hover{
+    cursor: pointer;
+    color:rgb(114, 128, 167);
+}
+
+.music{
+    width:40px;
+    margin-right: 0.7rem;
+}
+
+.second{
+    color:rgb(31, 47, 86);
+    font-weight: 900;
+}
+
+.price{
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(114, 128, 167);
+}
+
+.payment{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button{
+    background-color:rgb(56, 41, 224);
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    color:rgb(245, 247, 255);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(114, 128, 167);
+    transition: 0.2s;
+}
+
+.cancel{
+    font-size: 12px;
+    color:rgb(114, 128, 167);
+    font-weight: 700;
+}
+
+.cancel:hover{
+    cursor: pointer;
+    color: rgb(56, 41, 224);
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    body{
+        background: url(images/pattern-background-mobile.svg);
+        background-color: rgb(224, 232, 255);
+    }
+
+    .music{
+        height: 40px;
+        margin-right: 0.2rem;
+    }
+
+    .chg{
+        transform: translateY(2rem);
+        margin-left: -3rem;
+    }
+    
+    button{
+        padding: 1rem;
+    }
+}
